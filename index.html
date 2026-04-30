@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Activity Prompt Bundle for Kids</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #00B4D8;
+            /* Sky Blue */
+            --secondary: #FFD166;
+            /* Sunshine Yellow */
+            --accent: #EF476F;
+            /* Coral Orange */
+            --success: #06D6A0;
+            /* Mint Green */
+            --text-dark: #2B2D42;
+            --bg-body: #E0F7FA;
+            --bg-content: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 1.15rem;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-body);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Fredoka One', cursive;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: var(--bg-content);
+            padding: 50px 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: var(--secondary);
+            padding: 0 10px;
+            border-radius: 5px;
+            color: var(--text-dark);
+        }
+
+        .underline {
+            text-decoration: underline;
+            text-decoration-color: var(--primary);
+            text-decoration-thickness: 4px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            color: #444;
+        }
+
+        /* Button Styling */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #fff;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.7rem;
+            padding: 22px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(239, 71, 111, 0.4);
+            margin: 20px 0;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            animation: pulse-btn 2s infinite;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            background-color: #d83a5e;
+            color: white;
+            box-shadow: 0 15px 30px rgba(239, 71, 111, 0.6);
+            animation: none;
+        }
+
+        @keyframes pulse-btn {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Image Styling */
+        .product-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 4px solid var(--primary);
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Wrapper */
+        .hero-wrapper {
+            background: radial-gradient(circle at top center, #f4fbfc 0%, #ffffff 70%);
+            margin: -50px -60px 40px -60px;
+            padding: 60px 60px 40px 60px;
+            border-bottom: 3px dashed #d1eae8;
+        }
+
+        /* Lists */
+        .check-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        .check-list li {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .check-list li::before {
+            content: '⭐';
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Etsy Booming Section */
+        .booming-section {
+            background-color: #fdf5f5;
+            border-left: 6px solid var(--accent);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+
+        .booming-section h2 {
+            color: var(--accent);
+            font-size: 2.1rem;
+        }
+
+        .booming-section p {
+            font-size: 1.2rem;
+        }
+
+        /* Full Activities Modules Section */
+        .activity-module {
+            background-color: #fcfdfe;
+            border: 3px solid #e0f0f5;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            text-align: center;
+        }
+
+        .activity-module:nth-child(even) {
+            background-color: #fffdf5;
+            border-color: #fcf1d2;
+        }
+
+        .activity-module h3 {
+            font-size: 2.3rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .activity-desc {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        /* 4-Image Grid for Activities */
+        .module-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .module-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .module-gallery img:hover {
+            transform: scale(1.05);
+            /* Fun hover effect for kids images */
+            border-color: var(--accent);
+            z-index: 10;
+            position: relative;
+        }
+
+        /* Dynamic Title Colors */
+        .am-1 h3 {
+            color: var(--primary);
+        }
+
+        .am-2 h3 {
+            color: var(--accent);
+        }
+
+        .am-3 h3 {
+            color: var(--success);
+        }
+
+        .am-4 h3 {
+            color: #f0a500;
+        }
+
+        /* Darker yellow for text */
+
+        /* Flexible Content Section */
+        .flex-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            margin: 50px 0;
+            background: #f8fcfd;
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .flex-content img {
+            width: 50%;
+            border-radius: 15px;
+            border: 3px solid var(--secondary);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-text {
+            width: 50%;
+        }
+
+        /* Bonuses Box */
+        .bonus-section {
+            background-color: #fff9eb;
+            border: 4px solid var(--secondary);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+        }
+
+        /* Value Stack */
+        .value-stack {
+            border: 4px solid var(--text-dark);
+            border-radius: 15px;
+            padding: 45px;
+            background: #fafafa;
+            position: relative;
+        }
+
+        .value-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.35rem;
+            font-weight: 800;
+            border-bottom: 2px dashed #ccc;
+            padding: 15px 0;
+        }
+
+        .value-row:last-of-type {
+            border-bottom: none;
+        }
+
+        /* Guarantee Box */
+        .guarantee-box {
+            border: 4px dashed var(--success);
+            background: #f2fdf9;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .guarantee-box h3 {
+            font-size: 2.2rem;
+            color: var(--success);
+            margin-top: 0;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 25px;
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .faq-q {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .faq-a {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        .site-footer a {
+            color: #6c757d;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+
+        .site-footer a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 15px;
+            }
+
+            .hero-wrapper {
+                margin: -30px -20px 30px -20px;
+                padding: 40px 20px 30px 20px;
+            }
+
+            h1 {
+                font-size: 2.3rem !important;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            /* Make 4 images stack 2x2 on mobile for better visibility */
+            .module-gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .flex-content {
+                flex-direction: column;
+            }
+
+            .flex-content img,
+            .flex-content .flex-text {
+                width: 100%;
+            }
+
+            .cta-btn {
+                font-size: 1.4rem;
+                padding: 15px 25px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .value-row {
+                font-size: 1.1rem;
+            }
+
+            .activity-desc {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- =========================
+         IMPROVED HERO SECTION
+    ========================= -->
+        <div class="hero-wrapper text-center">
+            <!-- New Catchy Header Badge -->
+            <div style="margin-bottom: 25px;">
+                <span
+                    style="background-color: var(--secondary); color: var(--text-dark); padding: 8px 20px; border-radius: 30px; font-family: 'Fredoka One', cursive; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    🚀 Introducing The Ultimate Done-For-You Package
+                </span>
+            </div>
+
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 0px rgba(0,0,0,0.05);">Summer
+                Activity Prompt Bundle for Kids</h1>
+
+            <p
+                style="font-size: 1.7rem; color: var(--primary); font-family: 'Fredoka One', cursive; margin-bottom: 15px; text-transform: uppercase;">
+                480 Printable Games, Puzzles & Activities for Ages 5–10!
+            </p>
+
+            <p
+                style="font-size: 1.45rem; font-weight: 800; max-width: 800px; margin: 0 auto 30px auto; color: #4a4a4a;">
+                Keep children engaged, thinking, and having fun all summer long — <span
+                    style="background-color: var(--accent); color: white; padding: 2px 10px; border-radius: 5px;">Without
+                    Screens!</span>
+            </p>
+
+            <!-- GET BUTTON -->
+            <a href="#main-checkout-button" class="cta-btn">Download 480 Prompts for $11.99</a>
+
+            <p style="font-size: 1rem; color: #888; font-weight: bold; margin-top: -10px;">⭐ Instant PDF Download •
+                Secure Checkout</p>
+
+            <!-- MAIN PRODUCT IMAGE (main mockup.png) -->
+            <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/main%20mockup.png"
+                alt="Summer Activity Prompt Bundle for Kids Main Mockup" class="product-img"
+                style="margin-top: 40px; transform: rotate(-1deg);">
+        </div>
+
+        <!-- INTRODUCTION -->
+        <p style="font-size: 1.25rem;">Summer is the perfect time for children to explore, learn, laugh, and stay
+            active—but keeping kids entertained every day can be a massive challenge. <strong>That’s exactly why this
+                pack was created.</strong></p>
+
+        <p style="font-size: 1.25rem;">The <strong>Summer Activity Prompt Bundle for Kids</strong> is a huge collection
+            of creative printable activity prompts designed to keep children engaged, thinking, and having fun all
+            summer long. Inside, you’ll discover exciting games, brain-boosting puzzles, counting challenges,
+            spot-the-difference adventures, dot-to-dot discoveries, matching games, memory fun, and so much more.</p>
+
+        <p style="font-size: 1.25rem;">This product is specially designed for children ages 5 to 10, with activities
+            that beautifully balance fun and learning. Whether used at home, during travel, in classrooms, summer camps,
+            daycare centers, or rainy-day indoor play, these activities help children stay busy in a positive and
+            screen-free way.</p>
+
+        <hr style="border: 1px dashed #ccc; margin: 40px 0;">
+
+        <!-- WHAT MAKES IT SPECIAL -->
+        <div class="text-center">
+            <h2>What Makes This Pack Special?</h2>
+            <p style="font-size: 1.25rem;">Unlike ordinary worksheets, these prompts are built to create activities kids
+                actually enjoy. Every category is designed to naturally improve important developmental skills while
+                keeping the entire experience playful and exciting.</p>
+        </div>
+
+        <h3 class="text-center" style="margin-top: 40px; font-size: 1.8rem;">These fun games directly strengthen:</h3>
+        <ul class="check-list">
+            <li>Observation skills and attention to detail</li>
+            <li>Counting and number recognition</li>
+            <li>Focus and concentration spans</li>
+            <li>Memory skills and working memory</li>
+            <li>Logical thinking and pattern matching</li>
+            <li>Problem-solving ability</li>
+            <li>Fine motor skills (scissor use, pencil control)</li>
+            <li>Creative confidence and independent play</li>
+        </ul>
+
+        <!-- HIGHLIGHT: MULTIPLE THEMES -->
+        <div class="text-center"
+            style="margin-top: 50px; margin-bottom: 20px; padding: 35px; background-color: #f8fbfb; border-radius: 15px; border: 3px dashed var(--primary);">
+            <h3 style="font-size: 1.8rem; margin-top: 0; margin-bottom: 20px; color: var(--text-dark);">Generate
+                Activities in Dozens of Exciting Themes!</h3>
+            <p style="font-size: 1.25rem; margin-bottom: 25px;">You aren't stuck with just one boring style. These
+                prompts allow you to instantly create completely unique books covering whatever topics kids already
+                love:</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                <span
+                    style="background: var(--primary); color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🚀
+                    Outer Space</span>
+                <span
+                    style="background: var(--success); color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🦁
+                    Jungle Animals</span>
+                <span
+                    style="background: var(--accent); color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🚗
+                    Cool Vehicles</span>
+                <span
+                    style="background: #a06cd5; color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🧜‍♀️
+                    Magical Mermaids</span>
+                <span
+                    style="background: var(--secondary); color: var(--text-dark); padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🦕
+                    Dinosaurs</span>
+                <span
+                    style="background: #ff9800; color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🏴‍☠️
+                    Pirates</span>
+                <span
+                    style="background: #f08080; color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">...And
+                    so many more!</span>
+            </div>
+        </div>
+
+        <!-- =========================
+         NEW KDP & ETSY BOOMING SECTION
+    ========================= -->
+        <div class="booming-section">
+            <h2>🔥 Kids' Printables Are Booming on Etsy & Amazon KDP</h2>
+
+            <p><strong>Printable children's activities and summer learning books are rapidly growing in
+                    popularity</strong> across multiple bestselling categories on Etsy and Amazon KDP. Niches like
+                <em>Children’s Activity Books, Early Learning Workbooks, and Screen-Free Educational Printables</em> are
+                incredibly highly-searched right now.
+            </p>
+
+            <p>When you explore these marketplaces, you’ll consistently notice "I Spy" games, Dot-to-Dot books, and Cut
+                & Create activities dominating the front pages. Demand continues to skyrocket as parents and teachers
+                desperately search for hands-on learning tools to keep kids busy without relying on tablets or TVs.</p>
+
+            <p>What makes these specific activities so profitable is their blend of pure fun and deep educational value.
+                Kids genuinely love searching for hidden objects, finding differences, and building paper crafts—while
+                parents appreciate that these games quietly improve fine motor skills, logic, counting, and
+                problem-solving.</p>
+
+            <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary); text-align: center; margin: 30px 0;">
+                Now imagine seeing your own name on the cover of a best-selling kids' summer activity book.</p>
+
+            <p><strong>No stress. No complicated planning.</strong> Just ready-to-use creative prompts designed to
+                instantly generate games, puzzles, and counting challenges step by step.</p>
+
+            <p>So you can focus on what truly matters: effortlessly publishing highly sought-after printable activity
+                books that parents, teachers, and homeschoolers love to buy again and again.</p>
+        </div>
+
+
+        <div class="text-center" style="margin: 50px 0;">
+            <a href="#main-checkout-button" class="cta-btn">I Want To Build Printables Kids Enjoy!</a>
+        </div>
+
+        <hr style="border: 1px dashed #ccc; margin: 40px 0;">
+
+
+        <!-- =========================
+         THE 4 ACTIVITIES SHOWCASE
+    ========================= -->
+        <div class="text-center" style="margin-bottom: 50px;">
+            <h2 style="font-size: 2.8rem;">Dive Into The <span class="highlight">4 Action-Packed</span> Modules!</h2>
+            <p style="font-size: 1.35rem; max-width: 800px; margin: 0 auto;">There are <strong>120 fun-filled prompts
+                    included for every single category</strong> below. Take a look at the exact stunning quality you'll
+                be able to generate instantly!</p>
+        </div>
+
+        <!-- MODULE 1: I SPY -->
+        <div class="activity-module am-1">
+            <h3>1. I Spy Counting Games</h3>
+            <p class="activity-desc">Step into a world of hidden treasures! The <strong>I Spy Counting Games</strong>
+                section is packed with 120 uniquely designed prompts that challenge children to search, find, and count
+                hidden objects in playful, detailed scenes. This isn't just about counting—it builds intense visual
+                focus, improves short-term memory, and helps with object recognition. From bustling beaches to magical
+                forests, each generated worksheet feels like an adventure where kids get to play detective. It’s the
+                perfect blend of number practice and sheer entertainment!</p>
+
+            <div class="module-gallery">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/isp%201.png"
+                    alt="I Spy Sample 1">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/isp%202.png"
+                    alt="I Spy Sample 2">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/isp%203.png"
+                    alt="I Spy Sample 3">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/isp%204.png"
+                    alt="I Spy Sample 4">
+            </div>
+        </div>
+
+        <!-- MODULE 2: SPOT THE DIFFERENCE -->
+        <div class="activity-module am-2">
+            <h3>2. Spot the Difference Adventures</h3>
+            <p class="activity-desc">Sharpen those observation skills! Our <strong>Spot the Difference
+                    Adventures</strong> give kids the thrilling job of comparing two seemingly identical illustrations
+                to uncover sneaky, hidden changes. With 120 fun difference-finding prompts, this activity is incredibly
+                effective at developing a child's attention to detail, patience, and visual discrimination skills.
+                Whether it's a missing fish, a changed pirate hat, or a magically appearing star, hunting down every
+                difference gives kids a huge boost of confidence and an engaging challenge!</p>
+
+            <div class="module-gallery">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/sd%201.png"
+                    alt="Spot Difference Sample 1">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/sd%202.png"
+                    alt="Spot Difference Sample 2">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/sd%203.png"
+                    alt="Spot Difference Sample 3">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/sd%204.png"
+                    alt="Spot Difference Sample 4">
+            </div>
+        </div>
+
+        <!-- MODULE 3: DOT-TO-DOT -->
+        <div class="activity-module am-3">
+            <h3>3. Dot-to-Dot Discovery</h3>
+            <p class="activity-desc">Connect the dots to reveal the magic! The <strong>Dot-to-Dot Discovery</strong>
+                collection features 120 engaging prompts that guide children to follow numbered sequences, magically
+                transforming a chaotic splash of dots into a beautiful, hidden picture. This activity is a powerhouse
+                for learning: it naturally reinforces number order, builds hand-eye coordination, and perfects pencil
+                control—all while keeping kids in suspense about the final drawing. It’s a highly rewarding process that
+                leaves them with a fun coloring page once completed!</p>
+
+            <div class="module-gallery">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/dtd%201.png"
+                    alt="Dot to Dot Sample 1">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/dtd%202.png"
+                    alt="Dot to Dot Sample 2">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/dtd%203.png"
+                    alt="Dot to Dot Sample 3">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/dtd%204.png"
+                    alt="Dot to Dot Sample 4">
+            </div>
+        </div>
+
+        <!-- MODULE 4: CUT & CREATE -->
+        <div class="activity-module am-4">
+            <h3>4. Cut & Create Fun Book</h3>
+            <p class="activity-desc">Time to get hands-on with scissors and glue! The <strong>Cut & Create Fun
+                    Book</strong> comes with 120 exciting prompts where kids can cut out shapes, match pieces together,
+                and build their very own interactive scenes. Scissor skills are absolutely vital for fine motor
+                development, and this module makes practicing incredibly fun. They’ll be cutting out puzzle blocks,
+                matching missing pieces, and assembling creative pages. It turns a standard printable into a fully
+                physical, craft-building activity!</p>
+
+            <div class="module-gallery">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/CAP%201.png"
+                    alt="Cut Create Sample 1">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/CAT%202.png"
+                    alt="Cut Create Sample 2">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/CAP%203.png"
+                    alt="Cut Create Sample 3">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/CAT%204.png"
+                    alt="Cut Create Sample 4">
+            </div>
+        </div>
+
+
+
+        <!-- =========================
+         POST-ACTIVITIES INFO (MOCKUPS m2, m3, m4)
+    ========================= -->
+
+        <!-- Bundle Presentation (m2.png) -->
+        <div class="flex-content">
+            <div class="flex-text">
+                <h2>Everything In One <br><span style="color:var(--accent);">Massive Collection</span></h2>
+                <p>You don't just get one style of activity—you get 4 entire workbooks worth of content ready to
+                    generate. That's a total of 480 high-quality activities covering every aspect of early childhood
+                    cognitive development and motor skills.</p>
+                <p><strong>There's absolutely nothing left to chance. Just copy, paste, and let the summer fun
+                        begin!</strong></p>
+            </div>
+            <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/m2.png"
+                alt="Massive bundle layout">
+        </div>
+
+        <!-- Who is this perfect for? (m3.png) -->
+        <h2 class="text-center" style="margin-top: 60px;">Who Is This Perfect For?</h2>
+        <div
+            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; margin-top: 30px;">
+            <ul class="check-list" style="margin: 0; min-width: 300px;">
+                <li>Parents who want screen-free fun</li>
+                <li>Teacherpreneurs needing classroom printables</li>
+                <li>Homeschool families</li>
+                <li>Etsy and KDP publishers looking to scale</li>
+                <li>Summer camps & activity groups</li>
+                <li>Road trips & travel entertainment planners</li>
+            </ul>
+            <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/m3.png"
+                alt="Child having fun"
+                style="border-radius: 50%; border: 6px solid var(--secondary); max-width: 350px;">
+        </div>
+
+
+        <hr style="border: 1px dashed #ccc; margin: 50px 0;">
+
+
+        <!-- HOW TO USE THIS PACK - DETAILED -->
+        <div
+            style="margin-top: 60px; background-color: #fbfdff; border: 3px solid #e1f2f8; padding: 50px; border-radius: 20px;">
+            <h2 class="text-center" style="font-size: 2.3rem; margin-bottom: 20px;">How to Turn These Summer Activity
+                Prompts Into
+                <span class="text-coral underline">Ready-to-Sell Products</span>
+            </h2>
+
+            <p class="text-center" style="font-size: 1.35rem; max-width: 800px; margin: 0 auto 30px auto;">You don’t
+                need to be a teacher, an educator, or a professional worksheet designer.</p>
+
+            <p style="font-size: 1.25rem; font-weight: bold; text-align: center; margin-bottom: 40px; color: #444;">
+                With the <em>Summer Activity Prompt Bundle</em>, creating engaging summer learning activities becomes
+                fast, simple, and completely stress-free — no lesson planning, no guesswork, and no starting from a
+                blank page. Here’s how it works:
+            </p>
+
+            <div
+                style="margin-bottom: 40px; padding: 30px; background: white; border-radius: 15px; border-left: 6px solid var(--primary); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--primary); font-size: 1.8rem; margin-top: 0;">⭐ Step 1: Build Your Base Activity
+                    Worksheets</h3>
+                <p style="font-size: 1.2rem;">Choose any prompt and paste it into ChatGPT. Within seconds, you’ll
+                    receive a clear, beginner-friendly worksheet foundation that includes:</p>
+                <ul style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.8;">
+                    <li>✨ A short, child-friendly title and instructions</li>
+                    <li>✨ A ready-to-use concept for a puzzle, search game, or dot-to-dot</li>
+                    <li>✨ The exact elements needed to create the activity (like a list of items to count)</li>
+                    <li>✨ A clean, printable worksheet layout idea designed for young learners</li>
+                </ul>
+            </div>
+
+            <div
+                style="margin-bottom: 40px; padding: 30px; background: white; border-radius: 15px; border-left: 6px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--accent); font-size: 1.8rem; margin-top: 0;">⭐ Step 2: Generate & Structure By
+                    Difficulty</h3>
+                <p style="font-size: 1.2rem;">Run each prompt one at a time to instantly generate printable <em>I Spy,
+                        Spot the Difference, Dot-to-Dot, and Cut & Create</em> worksheets. <strong>We have specially
+                        organized all 480 prompts into 3 distinct difficulty levels</strong> so you can easily scale the
+                    challenge for different age groups!</p>
+                <ul style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.8;">
+                    <li>✨ <strong>Level 1 (Beginner):</strong> Simple, clear, easy puzzles for younger minds.</li>
+                    <li>✨ <strong>Level 2 (Intermediate):</strong> Fun, slightly challenging tasks that require focus.
+                    </li>
+                    <li>✨ <strong>Level 3 (Advanced):</strong> Highly dense puzzles for maximum engagement.</li>
+                </ul>
+            </div>
+
+            <div
+                style="margin-bottom: 40px; padding: 30px; background: white; border-radius: 15px; border-left: 6px solid var(--success); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--success); font-size: 1.8rem; margin-top: 0;">⭐ Step 3: Format, Finalize &
+                    Publish</h3>
+                <p style="font-size: 1.2rem;">Make small edits if needed, organize your generated images, and format
+                    your project using Canva, Microsoft Word, Google Docs, or any layout tool you prefer. Then publish
+                    or use your finished content as:</p>
+                <ul style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.8;">
+                    <li>📘 A massive interactive summer tracing workbook on Etsy & Amazon KDP</li>
+                    <li>🖨 A printable summer camp worksheet bundle</li>
+                    <li>📓 A screen-free logic workbook for preschool/kindergarten learners</li>
+                    <li>🎁 A fun educational road-trip gift for kids ages 5–10</li>
+                </ul>
+            </div>
+
+            <div
+                style="background-color: #fdfaf2; padding: 40px; border: 3px dashed var(--secondary); border-radius: 15px; text-align: center;">
+                <h3 style="color: #d19a12; font-size: 2rem; margin-top: 0;">🌟 Pro Strategy: Build a Complete Summer
+                    Learning Series</h3>
+                <p style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">Want to grow your brand or expand
+                    your KDP catalog?</p>
+                <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">Start with the Summer
+                    Activity Prompt Bundle, then naturally expand by organizing the 3 different difficulty levels into
+                    separate themed volumes. This makes it incredibly easy to continuously create and launch an entire
+                    library of bestselling logic books that drive repeat buyers!</p>
+            </div>
+        </div>
+
+        <!-- BONUSES SECTION (m4.png) -->
+        <div class="bonus-section">
+            <h2 class="text-center" style="color: var(--accent);">🎁 Bonus Action Takers Included!</h2>
+            <p class="text-center" style="font-size: 1.3rem;">Order today and receive these exclusive extras completely
+                free:</p>
+
+            <ul class="check-list">
+                <li><strong>Bonus 1:</strong> 4 Premium Printable Book Covers</li>
+                <li><strong>Bonus 2:</strong> Print Unlimited Times for Personal Use</li>
+                <li><strong>Bonus 3:</strong> Quick Start Printing Guide</li>
+            </ul>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/Summer-Activity/main/m%204.png"
+                    class="product-img" style="border-color: white; max-width: 800px; box-shadow: none;"
+                    alt="Bonus Mockups">
+            </div>
+        </div>
+
+
+        <!-- VALUE STACK -->
+        <div class="value-stack" id="checkout">
+            <h2 class="text-center">Here is Everything You Get Today</h2>
+
+            <div class="value-row">
+                <span>480 Activity Prompts</span>
+                <span>$47 Value</span>
+            </div>
+            <div class="value-row">
+                <span>4 Different Book Categories</span>
+                <span>$19 Value</span>
+            </div>
+            <div class="value-row">
+                <span>4 Premium Book Covers</span>
+                <span>$9 Value</span>
+            </div>
+            <div class="value-row">
+                <span>Unlimited Printing Rights</span>
+                <span>Priceless</span>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <p style="font-size: 1.5rem; text-decoration: line-through; color: var(--accent); margin-bottom: 0;">
+                    Total Value: $75+</p>
+                <p
+                    style="font-size: 3.5rem; font-family: 'Fredoka One', cursive; color: var(--success); margin: 0; line-height: 1;">
+                    Only $11.99 Today</p>
+
+                <a href="#" id="main-checkout-button" class="cta-btn"
+                    style="width: 100%; max-width: 500px; margin-top: 25px; font-size: 1.8rem;">Download Instantly
+                    Now</a>
+                <p style="font-size: 1.1rem; color: #888; font-weight: bold;">Secure Payment • Digital Delivery • PDF
+                    Format</p>
+            </div>
+        </div>
+
+        <!-- 7 DAY MONEY BACK GUARANTEE -->
+        <div class="guarantee-box">
+            <h3>🛡️ 7-Day Money Back Guarantee</h3>
+            <p style="font-size: 1.2rem; margin-bottom: 0;">
+                We are completely confident that you and your audience will love these prompts! But if you run into any
+                issues that our technical support can't solve within the first 7 days of purchase, just reach out to us
+                and we will offer a prompt refund. Purchase perfectly risk-free today!
+            </p>
+        </div>
+
+        <!-- FAQ -->
+        <h2 class="text-center" style="margin-top: 50px;">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-q">Q: Is this a physical shipped product?</div>
+                <p class="faq-a">A: No, this is a digital instant download. You will receive access instantly after
+                    purchase so you can start right away.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: Do I need special software?</div>
+                <p class="faq-a">A: No you do not need to have any software, you need just chatGpt .</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: Can teachers use it?</div>
+                <p class="faq-a">A: Yes! Teachers are absolutely welcome to use these printables and prompts for their
+                    classroom and students.</p>
+            </div>
+        </div>
+
+        <!-- FINAL CLOSE -->
+        <div class="text-center"
+            style="margin-top: 60px; padding: 50px; background: var(--success); color: white; border-radius: 15px;">
+            <h2 style="color: white; font-size: 2.8rem; margin-bottom: 30px;">Ready To Give Kids Hours of Smart Summer
+                Fun?</h2>
+            <a href="#main-checkout-button" class="cta-btn"
+                style="background: var(--secondary); color: var(--text-dark); box-shadow: 0 8px 0px #d6b34a;">Yes, Give
+                Me Access For $11.99</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER LINKS -->
+    <footer class="site-footer">
+        <p>
+            <a href="https://www.nextwiseai.com/privacy" target="_blank">Privacy Policy</a> |
+            <a href="https://www.nextwiseai.com/disclaimer" target="_blank">Disclaimer</a> |
+            <a href="https://www.nextwiseai.com/support" target="_blank">Support</a>
+        </p>
+        <p style="margin-top: 10px; font-weight: normal;">&copy; 2026 NextWise AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
